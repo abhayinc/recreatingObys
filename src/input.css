@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: "Plain Light", serif;
+}
+
+.silk {
+    font-family: "Silk Serif", sans-serif !important;
+
+}
+
+@keyframes now {
+    0% {
+        font-family: 'Plain Light', sans-serif;
+        color: #fff
+
+    }
+
+    100% {
+        font-family: 'Silk Serif', sans-serif;
+        font-weight: 500;
+        -webkit-text-stroke: 1px #fff;
+
+
+    }
+
+}
+.disclaimer #now{
+    animation-name: now;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2); /* Add this line */
+}
+
